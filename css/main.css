@@ -1,2 +1,50 @@
 /*MAIN CSS FILE*/
 /*V1*/
+
+html{
+    background-color: #FEC52E;
+}
+
+#title{
+    padding-top: 10%;
+}
+
+#title p{
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+}
+
+a{text-decoration: none;}
+
+a .mainbttn{
+    text-decoration: none;
+    color: black;
+}
+
+#buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.mainbttn{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    padding: 1%;
+}
+
+.mainbttn p{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 65px;
+    padding: 8%;
+    font-size: 3rem;
+   
+}
+
+#hero img{
+    width: 80%;
+    margin: 10%;
+}

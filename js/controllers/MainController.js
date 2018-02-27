@@ -1,4 +1,30 @@
 app.controller('MainController', ['$scope', function($scope) {
+    
+    $scope.apptitle = 'Drexel Interactive Guide',
+    $scope.categories = [
+    {
+            title: 'Food'
+    },
+    {
+            title: 'Historical'
+    },
+    {
+            title: 'Housing'
+    },
+    {
+            title: 'Places to Explore'
+    },
+    {
+            title: 'Campus Events'
+    },
+    {
+            title: 'Greek Life'
+    },
+    {
+            title: 'Convenience'
+    }
+        
+    ]
     $scope.mainplaces = [
     {
         title: 'Baby Blues BBQ',
@@ -31,8 +57,5 @@ app.controller('MainController', ['$scope', function($scope) {
         bio: 'words words words words words'
     }
     ]
-    
-    
-    
-    
+     
 }]);
