@@ -9,6 +9,11 @@ html{
     padding-top: 10%;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+
 #title p{
     font-size: 4rem;
     margin: 0;
@@ -48,3 +53,4 @@ a .mainbttn{
     width: 80%;
     margin: 10%;
 }
+
