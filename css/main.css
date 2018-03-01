@@ -10,9 +10,12 @@ html{
 }
 
 #title p{
-    font-size: 4rem;
+    font-size: 8rem;
     margin: 0;
     text-align: center;
+    color:#0F3E60;
+    font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 a{text-decoration: none;}
@@ -33,6 +36,7 @@ a .mainbttn{
     width: 40%;
     text-align: center;
     padding: 1%;
+    font-family: 'Josefin Sans', regular;
 }
 
 .mainbttn p{
@@ -41,10 +45,20 @@ a .mainbttn{
     border-radius: 65px;
     padding: 8%;
     font-size: 3rem;
+    color:#0F3E60;
    
 }
 
 #hero img{
-    width: 80%;
-    margin: 10%;
+    width: 70%;
+    margin: 15%;
+}
+#text{
+    font-family: 'Josefin Sans', regular;
+    text-align: center;
+    padding: 2%;
+     color:#0F3E60;
+     font-size:3rem;
+    letter-spacing: 5px;
+    
 }
