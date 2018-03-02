@@ -1,37 +1,43 @@
 /*MAIN CSS FILE*/
+
+
 /*V1*/
 
-html{
+
+/***** Homepage ******/
+
+html {
     background-color: #FEC52E;
 }
 
-#title{
+#title {
     padding-top: 10%;
 }
 
-#title p{
+#title p {
     font-size: 8rem;
     margin: 0;
     text-align: center;
-    color:#0F3E60;
+    color: #0F3E60;
     font-family: 'Josefin Sans', sans-serif;
-    
 }
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
-a .mainbttn{
+a .mainbttn {
     text-decoration: none;
     color: black;
 }
 
-#buttons{
+#buttons {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.mainbttn{
+.mainbttn {
     display: inline-block;
     width: 40%;
     text-align: center;
@@ -39,26 +45,45 @@ a .mainbttn{
     font-family: 'Josefin Sans', regular;
 }
 
-.mainbttn p{
+.mainbttn p {
     background-color: white;
     border: 2px solid white;
     border-radius: 65px;
     padding: 8%;
     font-size: 3rem;
-    color:#0F3E60;
-   
+    color: #0F3E60;
 }
 
-#hero img{
+#hero img {
     width: 70%;
     margin: 15%;
 }
-#text{
+
+#text {
     font-family: 'Josefin Sans', regular;
     text-align: center;
     padding: 2%;
-     color:#0F3E60;
-     font-size:3rem;
+    color: #0F3E60;
+    font-size: 3rem;
     letter-spacing: 5px;
-    
+}
+
+/***** Places ******/
+
+#placetitle {
+    font-family: 'Josefin Sans', regular;
+    font-size: 7rem;
+    text-align: center;
+    color: #0F3E60;
+}
+
+#placeimg {}
+
+#placebio {
+    color: #0F3E60;
+    font-family: 'Josefin Sans', regular;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin: 10px;
+    text-align: center;
 }
