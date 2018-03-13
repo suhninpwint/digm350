@@ -66,26 +66,31 @@ fieldset{border: none;}
 /*LINK BTTNS*/
 .link-container{
     height: 20vh;
-    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    padding-top: 10%;
 }
 
-.home-button{position: relative;}
+.home-button{
+    position: relative;
+    text-align: left;
+}
+
 .home-button img{
-    width: 40%;
+    width: 25%;
 }
 
 .info-button{
     position: relative;
     width: inherit;
+    text-align: right;
+    margin-right: 10%;
 }
 
 .info-button a{
     text-decoration: none;
     color: black;
     font-size: 2rem;
-    padding: 5% 40%;
+    padding: 5% 70%;
     border: solid white 2px;
     border-radius: 30px;
     background-color: white;
