@@ -31,8 +31,8 @@
                   </div>
              <div class="link-container">
                  <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
-                 <div class="info-button">
-                    <a href="#">Info</a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
                 </div>
             </div>
           </div>
@@ -49,9 +49,9 @@
                   </div>
              <div class="link-container">
                  <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
-                 <div class="info-button">
-                    <a href="#">Info</a>
-                </div>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>>
             </div>
           </div>
         </li>
@@ -67,8 +67,8 @@
                   </div>
              <div class="link-container">
                  <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
-                 <div class="info-button">
-                    <a href="#">Info</a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
                 </div>
             </div>
           </div>
@@ -85,8 +85,8 @@
                   </div>
               <div class="link-container">
                  <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
-                 <div class="info-button">
-                    <a href="#">Info</a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
                 </div>
             </div>
           </div>
@@ -103,8 +103,8 @@
               </div>
              <div class="link-container">
                  <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
-                 <div class="info-button">
-                    <a href="#">Info</a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
                 </div>
             </div>
           </div>
@@ -121,8 +121,8 @@
               </div>
          <div class="link-container">
                  <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
-                 <div class="info-button">
-                    <a href="#">Info</a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
                 </div>
             </div>
           </div>
@@ -130,7 +130,24 @@
               
       </ul>
     </div>
+        </div>
+        
+    <div id="overlay-container" class="hidden">
+        <div id="inner-container">
+            <div id="photo-container">
+                
+            </div>
+        
+            <div id="bio-container">
+                
+            </div>
+            
+            <div id="close-container" onclick="hideOverlay()">
+                <img src="img/close-round.svg">
+            </div>
+        </div>
     
+    </div>
         
 
 <!--
@@ -147,5 +164,6 @@
   <script src="basic/scripts/hammer.min.js"></script>
   <script src="basic/scripts/sequence.min.js"></script>
   <script src="basic/scripts/sequence-theme.basic.js"></script>
+  <script src="js/overlay.js"></script>
     </body>
 </html>
