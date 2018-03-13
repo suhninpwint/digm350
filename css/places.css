@@ -1,79 +1,94 @@
-/*
-html { 
-  background-color: #3F51B5;
-  position: relative;
-  min-height: 100%;
+
+/*BACKGROUND COLORS*/
+.seq .seq-step1{background-color: #75CDD6;}
+.seq .seq-step2{background-color: #FF8158;}
+.seq .seq-step3{background-color: #FF8158;}
+.seq .seq-step4{background-color: #FF8158;}
+.seq .seq-step5{background-color: #FF8158;}
+.seq .seq-step6{background-color: #FF8158;}
+
+.seq .seq-content{ 
+    padding: 10%;
 }
 
-body{
-    margin: 0 0 200px;
-    padding: 25px;
-}
-.hidden {
-  display: none;
+.inner-container{
+     min-height: 80vh;
 }
 
-.container {
-  margin: 0;
-  max-width: 750px;
-  margin:10vh auto 0 auto;
-}
+/*ARROWS*/
+fieldset{border: none;}
 
-.container > div {
-  display: inline-block;
-}
-
-#slideshow {
-  margin: 0;
-	position: relative;
-	width: 620px;
-  height: 250px;
-}
-
-#slideshow > div {
-	position: absolute;
-	top: 0; 
-	left: 0; 
-	right: 0; 
-	bottom: 0; 
-}
-
-#arrow_container{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top:50%;
-}
-
-.arrow img{
-    width: 110%;   
-}
-
-#L img{
-    transform: rotate(180deg);
-}
-
-.arrow{
-    width: 10%;
-}
-
-#slideshow img {
-  width: 100%;
-  margin: 0;
-  border: solid 1px #283593;
-}
-
-.bttn_container{
+.seq .seq-nav{
+    z-index: 999;
+    opacity: 1;
     display: flex;
     position: absolute;
     flex-flow: row nowrap;
-    height: 200px;
     width: 100%;
-    overflow: hidden;
-    left: 0;
-    bottom: 0;
+    top: 50%;
 }
 
-.homebttn{
+.seq .seq-nav button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.seq .seq-nav button {
+    width: 40%;
+}
+
+.arrow-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.seq .seq-nav .seq-prev{text-align: left;}
+.seq .seq-nav .seq-next{text-align: right;}
+
+.seq .seq-nav .seq-prev img{
+    transform: rotate(180deg);
     width: 30%;
-}*/
+}
+
+.seq .seq-nav .seq-next img{
+    width: 30%;
+    padding-right: 8%;
+}
+
+/**/
+
+/*LINK BTTNS*/
+.link-container{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.home-button{position: relative;}
+.home-button img{
+    width: 40%;
+}
+
+.info-button{
+    position: relative;
+    width: inherit;
+}
+
+.info-button a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding: 5% 40%;
+    border: solid white 2px;
+    border-radius: 30px;
+    background-color: white;
+    height: 50px;
+}
+

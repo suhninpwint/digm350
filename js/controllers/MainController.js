@@ -1,3 +1,8 @@
+var className = 'seq-step';
+var num = 1;
+var numString = '';
+var fullName = '';
+
 app.controller('MainController', ['$scope', function($scope) {
     
     $scope.apptitle = 'Drexel Interactive Guide',
@@ -29,43 +34,48 @@ app.controller('MainController', ['$scope', function($scope) {
     {
         title: 'Baby Blues BBQ',
         img: 'img/#',
-        bio: "Baby Blue's BBQ offers an array of exceptional meats and sides. Only a quick walk away from Drexel's campus. Be sure to check out the adjacent restaraunts around this gem of a place.",
-        num: 1
+        bio: 'Baby Blues BBQ offers an array of exceptional meats and sides. Only a quick walk away from Drexels campus. Be sure to check out the adjacent restaraunts around this gem of a place',
+        num: '1'
     },
     {
         title: 'Cucina Zapata',
         img: 'img/#',
         bio: 'words words words words words',
-        num: 2
+        num: '2'
     },
     {
         title: 'Happy Sunshine',
         img: 'img/#',
         bio: 'words words words words words',
-        num: 3
+        num: '3'
     },
     {
         title: 'Wahoos',
         img: 'img/#',
         bio: 'words words words words words',
-        num: 4
+        num: '4'
     },
     {
         title: "Trader Joe's",
         img: 'img/#',
         bio: 'words words words words words',
-        num: 5
+        num: '5'
     },
     {
         title: 'Fresh Grocer',
         img: 'img/#',
         bio: 'words words words words words',
-        num: 6
+        num: '6'
     }
     ],
-    //function that returns a string which will be the class name 
-    //increments the number depending on the length of the loop
-  
-    
-     
+    $scope.placesID = function(){
+
+        for(i=1; i< $scope.mainplaces.length; i++){
+            numSting = num.toString();
+            fullName = className + numString;
+            num++;
+            return fullName;
+        }
+        
+    }
 }]);

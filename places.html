@@ -1,59 +1,129 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="basic/css/sequence-theme.basic.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/places.css">
+<link rel="stylesheet" href="basic/css/sequence-theme.basic.css">
+
 </head>
+    <body>
+        
+         <div id="sequence" class="seq">
     
-<body ng-app="myApp">
- <div id="sequence" class="seq">
-     
-    <div class="seq-screen" ng-controller="MainController">
-        <ul class="seq-canvas" ng-repeat="mainplace in mainplaces">
-            <li ng-class="seq-step{{mainplace.num}}">
-                <div class="seq-content">
-                    
-                </div>
-            </li>
-        </ul>
-
-<!--
-
+    <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+        <div class="arrow-container">
+      <button type="button" class="seq-prev" aria-label="Previous"><img src="img/forward.png"></button>
+      <button type="button" class="seq-next" aria-label="Next"><img src="img/forward.png"></button>
+        </div>
+    </fieldset>
+             
+    <div class="seq-screen">
       <ul class="seq-canvas">
-
+        
         <li class="seq-step1" id="step1">
           <div class="seq-content">
-            <h2 data-seq class="seq-title">Powered by Sequence.js</h2>
-            <h3 data-seq class="seq-subtitle">The responsive CSS animation framework</h3>
-            <a class="seq-button" href="http://sequencejs.com/" target="_blank" tabindex="-1">Find Out More →</a>
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Baby Blues BBQ</h2>
+            <h3 data-seq class="seq-subtitle">Baby Blues BBQ offers an array of exceptional meats and sides. Only a quick walk away from Drexels campus. Be sure to check out the adjacent restaraunts around this gem of a place</h3>
+                  </div>
+             <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button">
+                    <a href="#">Info</a>
+                </div>
+            </div>
           </div>
         </li>
 
         <li class="seq-step2" id="step2">
           <div class="seq-content">
-            <h2 data-seq class="seq-title">Create Unique Animated Themes</h2>
-            <h3 data-seq class="seq-subtitle">For sliders, presentations, <br />banners, and other step-based applications</h3>
-            <a class="seq-button" href="http://sequencejs.com/" target="_blank" tabindex="-1">Find Out More →</a>
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Cucina Zapata</h2>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+                  </div>
+             <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button">
+                    <a href="#">Info</a>
+                </div>
+            </div>
           </div>
         </li>
 
         <li class="seq-step3" id="step3">
           <div class="seq-content">
-            <h2 data-seq class="seq-title">Rapid Development of Step-Based Animated  Applications</h2>
-            <h3 data-seq class="seq-subtitle">All of the JavaScript functionality you need built-in, so you can concentrate on substance and style</h3>
-            <a class="seq-button" href="http://sequencejs.com/" target="_blank" tabindex="-1">Find Out More →</a>
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Happy Sunshine</h2>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+                  </div>
+            <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button">
+                    <a href="#">Info</a>
+                </div>
+            </div>
           </div>
         </li>
-
+          
+        <li class="seq-step4" id="step4">
+          <div class="seq-content">
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Wahoos</h2>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+                  </div>
+             <div class="link-container">
+                <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button">
+                    <a href="#">Info</a>
+                </div>
+            </div>
+          </div>
+        </li>
+          
+        <li class="seq-step5" id="step5">
+          <div class="seq-content">
+               <div class="inner-container">
+            <h2 data-seq class="seq-title">Trader Joe's</h2>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+              </div>
+             <div class="link-container">
+                <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button">
+                    <a href="#">Info</a>
+                </div>
+            </div>
+          </div>
+        </li>
+          
+        <li class="seq-step6" id="step6">
+          <div class="seq-content">
+               <div class="inner-container">
+            <h2 data-seq class="seq-title">Fresh Grocer</h2>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+              </div>
+             <div class="link-container">
+                <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button">
+                    <a href="#">Info</a>
+                </div>
+            </div>
+          </div>
+        </li>
+              
       </ul>
--->
+    </div>
+    
+        
 
-    <ul rel="sequence" class="seq-pagination" role="navigation" aria-label="Pagination">
-      <li><a href="#step1" rel="step1" title="Go to slide 1">Powered by Sequence.js</a></li>
-      <li><a href="#step2" rel="step2" title="Go to slide 2">Create Unique Animated Themes</a></li>
-      <li><a href="#step3" rel="step3" title="Go to slide 3">Rapid Development of Step-Based Animated Applications</a></li>
+<!--
+    <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+      <li><a href="#step1" rel="step1" title="Go to slide 1"></a></li>
+      <li><a href="#step2" rel="step2" title="Go to slide 2"></a></li>
+      <li><a href="#step3" rel="step3" title="Go to slide 3"></a></li>
+      <li><a href="#step4" rel="step4" title="Go to slide 3"></a></li>
     </ul>
     </div>
+-->
 
   <script src="basic/scripts/imagesloaded.pkgd.min.js"></script>
   <script src="basic/scripts/hammer.min.js"></script>

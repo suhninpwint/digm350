@@ -41,6 +41,78 @@ $color3: #2BBF8E;
 $sequenceMobileHeight: 420px;
 $sequenceDesktopHeight: 585px;
 
+
+.seq .seq-next,
+.seq .seq-prev {
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  width: 35px;
+  height: 66px;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  /* Image replacement */
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.seq .seq-next {
+  right: 20px;
+  background: url("../img/forward.png");
+}
+
+.seq .seq-next:focus,
+.seq .seq-next:hover {
+  -webkit-transform: translate3d(4px, 0, 0);
+  -ms-transform: translate3d(4px, 0, 0);
+  transform: translate3d(4px, 0, 0);
+}
+
+.seq .seq-prev {
+  left: 20px;
+  background: url("../img/forward.png");
+}
+
+.seq .seq-prev:focus,
+.seq .seq-prev:hover {
+  -webkit-transform: translate3d(-4px, 0, 0);
+  -ms-transform: translate3d(-4px, 0, 0);
+  transform: translate3d(-4px, 0, 0);
+}
+
+.seq .seq-nav,
+.seq .seq-pagination {
+  /* Hide navigation when JS is disabled */
+  display: none;
+}
+
+seq.seq-active .seq-nav {
+  /* Show navigation and pagination if JS is enabled */
+  display: block;
+}
+
+.seq .seq-nav {
+  /* Styles for next/previous buttons and pagination */
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  pointer-events: none;
+  border: none;
+}
+
+
 .seq {
   position: relative;
 

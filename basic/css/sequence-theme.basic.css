@@ -56,6 +56,16 @@ html,
   list-style: none;
 }
 
+.seq.seq-fallback .seq-next:focus,
+.seq.seq-fallback .seq-next:hover,
+.seq.seq-fallback .seq-prev:focus,
+.seq.seq-fallback .seq-prev:hover,
+.seq.seq-fallback .seq-pagination li:focus,
+.seq.seq-fallback .seq-pagination li:hover {
+  top: -4px;
+}
+
+
 .seq .seq-preloader {
   background: #279FE5;
 }
