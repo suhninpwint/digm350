@@ -1,38 +1,169 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/places.css">
+<link rel="stylesheet" href="basic/css/sequence-theme.basic.css">
+
 </head>
+    <body>
+        
+    <div id="sequence" class="seq">
     
-<body ng-app="myApp">
-    <div id="wrapper"  ng-controller="MainController">
-        <div id="arrows">
+    <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+        <div class="arrow-container">
+      <button type="button" class="seq-prev" aria-label="Previous"><img src="img/forward.png"></button>
+      <button type="button" class="seq-next" aria-label="Next"><img src="img/forward.png"></button>
+        </div>
+    </fieldset>
+             
+    <div class="seq-screen">
+      <ul class="seq-canvas">
+        
+        <li class="seq-step1" id="step1 food">
+          <div class="seq-content">
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Baby Blues BBQ</h2>
+                  <div class="hero-container">
+                    <img src="#">
+                  </div>
+            <h3 data-seq class="seq-subtitle">Baby Blues BBQ offers an array of exceptional meats and sides. Only a quick walk away from Drexels campus. Be sure to check out the adjacent restaraunts around this gem of a place</h3>
+                  </div>
+             <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="seq-step2" id="step2">
+          <div class="seq-content">
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Cucina Zapata</h2>
+                  <div class="hero-container">
+                    <img src="#">
+                  </div>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+                  </div>
+             <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="seq-step3" id="step3">
+          <div class="seq-content">
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Happy Sunshine</h2>
+                  <div class="hero-container">
+                    <img src="#">
+                  </div>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+                  </div>
+             <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>
+            </div>
+          </div>
+        </li>
+          
+        <li class="seq-step4" id="step4">
+          <div class="seq-content">
+              <div class="inner-container">
+            <h2 data-seq class="seq-title">Wahoos</h2>
+                  <div class="hero-container">
+                    <img src="#">
+                  </div>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+                  </div>
+              <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>
+            </div>
+          </div>
+        </li>
+          
+        <li class="seq-step5" id="step5">
+          <div class="seq-content">
+               <div class="inner-container">
+            <h2 data-seq class="seq-title">Trader Joe's</h2>
+                   <div class="hero-container">
+                    <img src="#">
+                  </div>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+              </div>
+             <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>
+            </div>
+          </div>
+        </li>
+          
+        <li class="seq-step6" id="step6">
+          <div class="seq-content">
+               <div class="inner-container">
+            <h2 data-seq class="seq-title">Fresh Grocer</h2>
+                   <div class="hero-container">
+                    <img src="#">
+                  </div>
+            <h3 data-seq class="seq-subtitle">blah blah blah</h3>
+              </div>
+         <div class="link-container">
+                 <a class="home-button" href="#"><img src="img/Home-icon.svg.png"></a>
+                 <div class="info-button" onclick="showOverlay()">
+                    <p>Info</p>
+                </div>
+            </div>
+          </div>
+        </li>
+              
+      </ul>
+    </div>
         </div>
         
-        <div id="places" ng-repeat="mainplace in mainplaces">
-            <div id="placetitle">
-            <p class="title">{{mainplace.title}}</p>
+    <div id="overlay-container" class="hidden">
+        <div id="inner-container">
+            <div id="photo-container">
+                
             </div>
-            <div id="placeimg">
-            <img ng-src="{{ mainplace.img }}">
+        
+            <div id="bio-container">
+                
             </div>
-            <div id="placebio">
-            <p class="bio">{{mainplace.bio}}</p>
-            </div>
-            <div class="homebttn">
-                <img src="#">
-            </div>
-            <div class="infobttn">
-                <img src="#">
+            
+            <div id="close-container" onclick="hideOverlay()">
+                <img src="img/close-round.svg">
             </div>
         </div>
+    
     </div>
-</body>
-    
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    
-<script src="js/app.js"></script>
-<script src="js/controllers/MainController.js"></script>
+        
+
+<!--
+    <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+      <li><a href="#step1" rel="step1" title="Go to slide 1"></a></li>
+      <li><a href="#step2" rel="step2" title="Go to slide 2"></a></li>
+      <li><a href="#step3" rel="step3" title="Go to slide 3"></a></li>
+      <li><a href="#step4" rel="step4" title="Go to slide 3"></a></li>
+    </ul>
+    </div>
+-->
+
+  <script src="basic/scripts/imagesloaded.pkgd.min.js"></script>
+  <script src="basic/scripts/hammer.min.js"></script>
+  <script src="basic/scripts/sequence.min.js"></script>
+  <script src="basic/scripts/sequence-theme.basic.js"></script>
+  <script src="js/overlay.js"></script>
+    </body>
 </html>
