@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 /*BACKGROUND COLORS*/
 .seq .seq-step1{background-color: #75CDD6;}
@@ -19,6 +20,134 @@
 fieldset{border: none;}
 
 .seq .seq-nav{
+=======
+/*BACKGROUND COLORS*/
+
+.seq .seq-step1 {
+    background-color: #75CDD6;
+}
+
+.seq .seq-step2 {
+    background-color: #8CBD5A;
+}
+
+.seq .seq-step3 {
+    background-color: #ECE6B3;
+}
+
+.seq .seq-step4 {
+    background-color: #C4CA89;
+}
+
+.seq .seq-step5 {
+    background-color: #873546;
+}
+
+.seq .seq-step6 {
+    background-color: #6D9E4C;
+}
+
+.seq .seq-step7 {
+    background-color: #D28B85;
+}
+
+.seq .seq-step8 {
+    background-color: #6F6E6D;
+}
+
+.seq .seq-step9 {
+    background-color: #F1C672;
+}
+
+.seq .seq-step10 {
+    background-color: #ADB4B4;
+}
+
+.seq .seq-step11 {
+    background-color: #CDB198;
+}
+
+.seq .seq-step12 {
+    background-color: #CDB198;
+}
+
+.seq .seq-step13 {
+    background-color: #F06F6E;
+}
+
+.seq .seq-step14 {
+    background-color: #984B4B;
+}
+
+.seq .seq-step15 {
+    background-color: #65879D;
+}
+
+.seq .seq-step16 {
+    background-color: #586997;
+}
+
+.seq .seq-step17 {
+    background-color: #9D9EBC;
+}
+
+.seq .seq-step18 {
+    background-color: #E8A381;
+}
+
+.seq .seq-step19 {
+    background-color: #8B7669;
+}
+
+.seq .seq-step20 {
+    background-color: #9799BB;
+}
+
+.seq .seq-step21 {
+    background-color: #96CCCA;
+}
+
+.seq .seq-step22 {
+    background-color: #A69565;
+}
+
+.seq .seq-step23 {
+    background-color: #F18C78;
+}
+
+.seq .seq-step24 {
+    background-color: #4D8726;
+}
+
+.seq .seq-step25 {
+    background-color: #76A0B1;
+}
+
+.seq .seq-step26 {
+    background-color: #EB6060;
+}
+
+.seq .seq-step27 {
+    background-color: #AA7063;
+}
+
+.seq .seq-content {
+    padding: 10%;
+}
+
+.inner-container {
+    min-height: 80vh;
+}
+
+
+/*ARROWS*/
+
+fieldset {
+    border: none;
+}
+
+.seq .seq-nav {
+>>>>>>> Stashed changes
     z-index: 999;
     opacity: 1;
     display: flex;
@@ -28,7 +157,13 @@ fieldset{border: none;}
     top: 50%;
 }
 
+<<<<<<< Updated upstream
 .seq .seq-nav button, input[type="submit"], input[type="reset"] {
+=======
+.seq .seq-nav button,
+input[type="submit"],
+input[type="reset"] {
+>>>>>>> Stashed changes
     background: none;
     color: inherit;
     border: none;
@@ -42,44 +177,86 @@ fieldset{border: none;}
     width: 40%;
 }
 
+<<<<<<< Updated upstream
 .arrow-container{
+=======
+.arrow-container {
+>>>>>>> Stashed changes
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
+<<<<<<< Updated upstream
 .seq .seq-nav .seq-prev{text-align: left;}
 .seq .seq-nav .seq-next{text-align: right;}
 
 .seq .seq-nav .seq-prev img{
+=======
+.seq .seq-nav .seq-prev {
+    text-align: left;
+}
+
+.seq .seq-nav .seq-next {
+    text-align: right;
+}
+
+.seq .seq-nav .seq-prev img {
+>>>>>>> Stashed changes
     transform: rotate(180deg);
     width: 30%;
 }
 
+<<<<<<< Updated upstream
 .seq .seq-nav .seq-next img{
+=======
+.seq .seq-nav .seq-next img {
+>>>>>>> Stashed changes
     width: 30%;
     padding-right: 8%;
 }
 
+<<<<<<< Updated upstream
 /**/
 
 /*LINK BTTNS*/
 .link-container{
+=======
+
+/**/
+
+
+/*LINK BTTNS*/
+
+.link-container {
+>>>>>>> Stashed changes
     height: 20vh;
     display: flex;
     margin-top: 3%;
 }
 
+<<<<<<< Updated upstream
 .home-button{
+=======
+.home-button {
+>>>>>>> Stashed changes
     position: relative;
     text-align: left;
 }
 
+<<<<<<< Updated upstream
 .home-button img{
     width: 25%;
 }
 
 .info-button{
+=======
+.home-button img {
+    width: 25%;
+}
+
+.info-button {
+>>>>>>> Stashed changes
     position: relative;
     width: inherit;
     text-align: right;
@@ -87,6 +264,7 @@ fieldset{border: none;}
     z-index: 999;
 }
 
+<<<<<<< Updated upstream
 .info-button p{
     color: black;
     font-size: 2rem;
@@ -105,10 +283,36 @@ fieldset{border: none;}
 }
 
 .active{
+=======
+.info-button p {
+    color: black;
+    font-size: 4rem;
+    padding: 8% 70%;
+    border: solid white 2px;
+    border-radius: 30px;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Josefin Sans', regular;
+    text-align: center;
+    color: #0F3E60;
+}
+
+
+/*SHOW OVERLAY*/
+
+.hidden {
+    display: none;
+}
+
+.active {
+>>>>>>> Stashed changes
     display: inline-block;
     position: absolute;
 }
 
+<<<<<<< Updated upstream
 /*OVERLAY STYLING*/
 #overlay-container{
     z-index: 999;
@@ -120,6 +324,21 @@ fieldset{border: none;}
 }
 
 #overlay-container #inner-container{
+=======
+
+/*OVERLAY STYLING*/
+
+#overlay-container {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(192, 192, 192, 0.8);
+    text-align: center;
+}
+
+#overlay-container #inner-container {
+>>>>>>> Stashed changes
     width: 70%;
     height: 70%;
     margin: 5%;
@@ -130,7 +349,11 @@ fieldset{border: none;}
     background-color: white;
 }
 
+<<<<<<< Updated upstream
 #close-container{
+=======
+#close-container {
+>>>>>>> Stashed changes
     position: absolute;
     left: 10%;
     top: 10%;
@@ -138,7 +361,87 @@ fieldset{border: none;}
     text-align: left;
 }
 
+<<<<<<< Updated upstream
 #close-container img{
     width:20%;
     position: relative;
+=======
+#close-container img {
+    width: 20%;
+    position: relative;
+    margin: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* Text */
+
+h3.seq-subtitle {}
+
+
+/*h3 data-seq.seq-subtitle {
+    padding: 20px;
+    margin: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    font-size: 100rem;
+    color: #0F3E60;
+    
+} 
+*/
+
+.text_p {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    font-size: 2.7rem;
+    color: #0F3E60;
+    font-family: 'Josefin Sans', regular;
+    padding-top: 50px;
+}
+
+.t1 {
+    max-width: 1300px;
+    margin-left: -240px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 600px) {
+    .text_p {}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-device-width: 768px) {
+    .text_p {
+        background: green;
+    }
+}
+
+* Medium devices (landscape tablets, 768px and up) */ @media only screen and (min-width: 768px) and (max-device-width: 1200px) {
+    .text_p {
+        background: blue;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-device-width: 1200px) {
+    .text_p {
+        background: orange;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px)and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .text_p {
+ background: orange;
+    }
+>>>>>>> Stashed changes
 }

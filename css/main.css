@@ -6,6 +6,10 @@
 
 /***** Homepage ******/
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: #FEC52E;
 }
@@ -19,6 +23,7 @@ html {
     margin: 0;
     text-align: center;
     color: #0F3E60;
+    font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -60,6 +65,9 @@ a .mainbttn {
 }
 
 #text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     font-family: 'Josefin Sans', regular;
     text-align: center;
     padding: 2%;
@@ -68,22 +76,28 @@ a .mainbttn {
     letter-spacing: 5px;
 }
 
-/***** Places ******/
 
-#placetitle {
-    font-family: 'Josefin Sans', regular;
-    font-size: 7rem;
-    text-align: center;
-    color: #0F3E60;
+/* Media Queries */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 500) and (max-device-width: 864) and (-webkit-min-device-pixel-ratio: 1) {
+    #text {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-color: blue;
+    }
 }
 
-#placeimg {}
-
-#placebio {
-    color: #0F3E60;
-    font-family: 'Josefin Sans', regular;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    margin: 10px;
-    text-align: center;
+@media only screen and (min-device-width: 1800) {
+    #title p {
+        font-size: 40rem;
+        margin: 0;
+        text-align: center;
+        color: #0F3E60;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+    }
 }
