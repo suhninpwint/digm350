@@ -26,6 +26,7 @@ function writeInfo(button){
     
     if(id == 'button1'){
         console.log('1');
+        photos.innerHTML = "<img src='img/forward.png'>"
     }  else if(id == 'button2'){
         console.log('2');
     }  else if(id == 'button3'){

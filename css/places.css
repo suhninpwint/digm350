@@ -1,11 +1,11 @@
 
 /*BACKGROUND COLORS*/
-.seq .seq-step1{background-color: #75CDD6;}
-.seq .seq-step2{background-color: #FF8158;}
-.seq .seq-step3{background-color: #FF8158;}
-.seq .seq-step4{background-color: #FF8158;}
-.seq .seq-step5{background-color: #FF8158;}
-.seq .seq-step6{background-color: #FF8158;}
+.seq li.seq-step1{background-color: #FF8158;}
+.seq li.seq-step2{background-color: #FF8158;}
+.seq li.seq-step3{background-color: #FF8158;}
+.seq li.seq-step4{background-color: #FF8158;}
+.seq li.seq-step5{background-color: #FF8158;}
+.seq li.seq-step6{background-color: #FF8158;}
 
 .seq .seq-content{ 
     padding: 10%;
